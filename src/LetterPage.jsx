@@ -30,40 +30,41 @@ export default function LetterPage() {
           height: 100%;
           z-index: 0;
           pointer-events: none;
+          background-color: #111;
           /* Main grid lines every 64px, sub-grid lines every 16px */
           background-image:
             repeating-linear-gradient(
               0deg,
-              rgba(255, 255, 255, 0.02) 0px,
-              rgba(255, 255, 255, 0.02) 1px,
-              transparent 1px,
-              transparent 16px
+              transparent 0px,
+              transparent calc(16px - 1px),
+              rgba(255, 255, 255, 0.08) calc(16px - 1px),
+              rgba(255, 255, 255, 0.08) 16px
             ),
             repeating-linear-gradient(
               90deg,
-              rgba(255, 255, 255, 0.02) 0px,
-              rgba(255, 255, 255, 0.02) 1px,
-              transparent 1px,
-              transparent 16px
+              transparent 0px,
+              transparent calc(16px - 1px),
+              rgba(255, 255, 255, 0.08) calc(16px - 1px),
+              rgba(255, 255, 255, 0.08) 16px
             ),
             repeating-linear-gradient(
               0deg,
-              rgba(255, 255, 255, 0.05) 0px,
-              rgba(255, 255, 255, 0.05) 1px,
-              transparent 1px,
-              transparent 64px
+              transparent 0px,
+              transparent calc(64px - 1px),
+              rgba(255, 255, 255, 0.15) calc(64px - 1px),
+              rgba(255, 255, 255, 0.15) 64px
             ),
             repeating-linear-gradient(
               90deg,
-              rgba(255, 255, 255, 0.05) 0px,
-              rgba(255, 255, 255, 0.05) 1px,
-              transparent 1px,
-              transparent 64px
+              transparent 0px,
+              transparent calc(64px - 1px),
+              rgba(255, 255, 255, 0.15) calc(64px - 1px),
+              rgba(255, 255, 255, 0.15) 64px
             );
           /* Adjust grid spacing or opacity here if needed:
              - Change 16px to adjust sub-grid spacing
              - Change 64px to adjust main grid spacing
-             - Change rgba opacity values (0.02 and 0.05) to adjust visibility
+             - Change rgba opacity values (0.08 and 0.15) to adjust visibility
           */
         }
 
